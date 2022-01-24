@@ -1,0 +1,225 @@
+/*
+    COMP 10065 - Assignment 5
+
+    Author: Vincent Mark, 000803494
+    Date Created: July 26, 2020 
+    Description: A CSS file for providing stylization to 'index.html'
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: white;
+    background-color: #011023;
+}
+
+.blue-text {
+    color: #8ed9ec;
+}
+
+/* Login and Signup Page Styling */
+form {
+    margin: 10px;
+}
+
+button {
+    margin-top: 5px;
+    padding: 5px;
+    width: 60px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+input {
+    padding: 3px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 20px;
+    width: 250px;
+}
+
+.radio-element {
+    display: inline;
+    margin: 5px;
+}
+
+fieldset {
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Main Menu Page Navigation Bar Styling */
+#small-screen-only {
+    display: none;
+}
+
+#nav-heading, #small-screen-only {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 12px;
+    border-bottom: 2px solid #2e5e74;
+    background-image: linear-gradient(#33576d, #182633);
+}
+
+h2 {
+    margin: 30px 0 10px 0;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    border-bottom: 2px solid #2e5e74;
+}
+
+.nav-button {
+    width: 100px;
+    color: gray;
+    display: table-cell;
+    padding: 20px;
+    background-image: linear-gradient(#33576d, #182633);
+}
+
+.nav-button:visited {
+    color: gray;
+}
+
+.nav-button:hover {
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(#182633, #33576d);
+}
+
+@media(max-width: 1270px) {
+    #nav-heading {
+        text-align: left;
+        padding: 13px;
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 955px) {
+    #small-screen-only {
+        display: block;
+    }
+
+    #nav-heading {
+        display: none;
+    }
+
+    #nav-container {
+        width: 100%;
+        position: static;
+        float: none;
+        display: inline-block;
+        background-image: linear-gradient(#33576d, #182633);
+    }
+
+    .nav-button {
+        display: inline-block;
+        margin: 0 -2px;
+    }
+}
+
+/* Main Menu Page Stock Feed Styling */
+.small-text {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+#stock-table-length {
+    display:inline-block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    background-color: #d3d3d3;
+    overflow: hidden;
+    border-radius: 10px;
+    font-size: 0;
+}
+
+#stock-table-length input {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+}
+
+#stock-table-length input:hover {
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #bebebe;
+}
+
+#stock-table {
+    margin: auto;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-image: linear-gradient(#24292e, #4c5761);
+}
+
+th, td {
+    padding: 15px 40px;
+}
+
+tr {
+    border-bottom: 1px solid #15415a;
+    background-image:
+    linear-gradient(
+        #213043, 
+        #10212b, 
+        #000b1b,
+        black
+    );
+}
+
+tr:hover {
+    background-image:
+    linear-gradient(
+        #15415a, 
+        #10212b, 
+        black
+    );
+}
+
+/* Main Menu Page Add Stock Form */
+.add-stock-container {
+    display: none;
+}
+
+.add-stock-fieldset {
+    width: 700px;
+    padding: 15px;
+}
